@@ -1,9 +1,9 @@
 import React from "react";
-import { Text, StyleSheet, TouchableHighlight } from "react-native";
+import { Text, TouchableHighlight, StyleSheet } from "react-native";
 
-const TodoButton = ({ onPressOut, complete, name }) => (
+const TodoButton = ({ onPress, complete, name }) => (
   <TouchableHighlight
-    onPressOut={onPressOut}
+    onPress={onPress}
     underlayColor="#efefef"
     style={styles.button}
   >
@@ -18,6 +18,7 @@ const TodoButton = ({ onPressOut, complete, name }) => (
     </Text>
   </TouchableHighlight>
 );
+
 const styles = StyleSheet.create({
   button: {
     alignSelf: "flex-end",
@@ -35,7 +36,8 @@ const styles = StyleSheet.create({
     fontWeight: "bold"
   },
   deleteButton: {
-    color: "rgba(175,47,47,1)"
+    color: "rgba(175, 47, 47, 1)"
   }
 });
+
 export default TodoButton;

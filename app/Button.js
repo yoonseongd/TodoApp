@@ -1,12 +1,13 @@
 import React from "react";
 import { View, Text, StyleSheet, TouchableHighlight } from "react-native";
 
+/* submitTodo 메서드를 구조 분해 할당 */
 const Button = ({ submitTodo }) => (
   <View style={styles.buttonContainer}>
     <TouchableHighlight
       underlayColor="#efefef"
       style={styles.button}
-      onPressOut={submitTodo}
+      onPress={submitTodo}
     >
       <Text style={styles.submit}>Submit</Text>
     </TouchableHighlight>

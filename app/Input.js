@@ -6,13 +6,14 @@ const Input = ({ inputValue, inputChange }) => (
     <TextInput
       value={inputValue}
       style={styles.input}
-      placeholder="what needs to be done?"
-      placeholderTextColor="#cacaca"
-      selectionColoer="#666666"
+      placeholder="What needs to be done?"
+      placeholderTextColor="#CACACA"
+      selectionColor="#666666"
       onChangeText={inputChange}
     />
   </View>
 );
+
 const styles = StyleSheet.create({
   inputContainer: {
     marginLeft: 20,
@@ -29,4 +30,5 @@ const styles = StyleSheet.create({
     paddingRight: 10
   }
 });
+
 export default Input;
