@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 import { View, ScrollView, StyleSheet } from "react-native";
+import TabBar from "./app/TapBar";
+import Heading from "./app/Heading";
 
-import Heading from "./Heading";
+import Input from "./app/Input";
 
-import Input from "./Input";
+import Button from "./app/Button";
 
-import Button from "./Button";
-
-import TodoList from "./TodoList";
-
-import TabBar from "./TabBar";
+import TodoList from "./app/TodoList";
 
 let todoIndex = 0;
 

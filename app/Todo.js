@@ -1,16 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-// const Todo = ({ todo }) => (
-// 	<View style={styles.todoContainer}>
-// 		<Text style={styles.todoText}>
-// 			{todo.title}
-// 		</Text>
-// 	</View>
-// )
-
-//3.21
-
 import TodoButton from "./TodoButton";
 
 const Todo = ({ todo, toggleComplete, deleteTodo }) => (
